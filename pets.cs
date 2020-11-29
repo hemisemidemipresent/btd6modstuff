@@ -79,6 +79,9 @@ namespace Test
                 foot.ignoresPlacementCheck = true;
                 foot.ignoresTowerOverlap = true;
                 lazerModel.footprint = foot;
+                lazerModel.ignoreTowerForSelection = true;
+                lazerModel.ignoreCoopAreas = true;
+                lazerModel.ignoreBlockers = true;
                 spawnTower(v3, lazerModel);
             }
         }
